@@ -15,3 +15,16 @@
         opacity: 0;
     }
 }
+
+@keyframes shockwave {
+    0% {
+        stroke-width: 2;
+        opacity: 1;
+        r: 35;
+    }
+    100% {
+        stroke-width: 0;
+        opacity: 0;
+        r: 60;
+    }
+}
