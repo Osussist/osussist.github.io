@@ -158,19 +158,22 @@ body::before {
 
 .sidebar-content-holder h1 {
     margin: 0;
-    font-size: 120%;
+    font-size: 1.2em;
     font-weight: 200;
     text-align: center;
     font-family: var(--comfortaa-font);
-    margin-bottom: 5px;
+    margin-bottom: 0.2em;
 }
 
 .sidebar-content-holder p {
     margin: 0;
-    font-size: 90%;
+    font-size: 0.9em;
     font-weight: 200;
     color: var(--secondary-color);
     font-family: var(--comfortaa-font);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .pulsating-dot {
@@ -191,6 +194,6 @@ body::before {
     animation: shockwave 2s infinite;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     
 }
