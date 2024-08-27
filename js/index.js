@@ -37,37 +37,56 @@ function getDailyBeatmap() {
         url: apiUrl + "/get-daily-beatmap",
         method: "GET",
         dataType: "json",
-        Headers: {
+        headers: {
             "Access-Control-Allow-Origin": "*"
         },
         success: function(data) {
-            let song_title = $("#title-daily-btmp");
-            let song_artist = $("#artist-daily-btmp");
-            let song_cover = $("#cover-daily-btmp");
-            let song_mapper = $("#mapper-daily-btmp");
-            let song_star_holder = $("#stars-holder");
+            let song_image = $(".sidebar-content-image");
+            let song_content = $(".sidebar-content-text");
 
-            song_cover.attr("src", data.cover);
-            song_title.html(data.title);
-            song_artist.html(`Artist: ${data.artist}`);
-            song_mapper.html(`Mapper: ${data.creator}`);
-            song_star_holder.html("");
+            
+            song_image.addClass("fade-out");
+            song_content.addClass("fade-out");
 
-            let highest_diff = Math.round(data.ratings[0]);
+            
+            setTimeout(() => {
+                
+                let song_title = $("#title-daily-btmp");
+                let song_artist = $("#artist-daily-btmp");
+                let song_cover = $("#cover-daily-btmp");
+                let song_mapper = $("#mapper-daily-btmp");
+                let song_star_holder = $("#stars-holder");
+                
+                let cleanedTitle = data.title.replace(/\s*\(.*?\)\s*/g, '');
+                let cleanedArtist = data.artist.replace(/\s*\(.*?\)\s*/g, '');
 
+                song_cover.attr("src", data.cover);
+                song_title.html(cleanedTitle);
+                song_artist.html(`Artist: ${cleanedArtist}`);
+                song_mapper.html(`Mapper: ${data.creator}`);
+                song_star_holder.html("");
 
-            if (highest_diff > 8) {
-                highest_diff = 8
-                for (let i = 0; i < highest_diff; i++) {
-                    song_star_holder.append("<i class='fas fa-star'></i>\n");
+                let highest_diff = Math.round(data.ratings[0]);
+
+                if (highest_diff > 10) {
+                    highest_diff = 10;
                 }
-                song_star_holder.append('<i class="fa-solid fa-plus"></i>\n');
-            }
-            else {
+
                 for (let i = 0; i < highest_diff; i++) {
-                    song_star_holder.append("<i class='fas fa-star'></i>\n");
+                    song_star_holder.append("<i class='fa-solid fa-star'></i>\n");
                 }
-            }
+
+                
+                song_image.removeClass("fade-out").addClass("fade-in");
+                song_content.removeClass("fade-out").addClass("fade-in");
+
+                
+                setTimeout(() => {
+                    song_image.removeClass("fade-in");
+                    song_content.removeClass("fade-in");
+                }, 1000);
+
+            }, 1000);
         },
         error: function(xhr, status, error) {
             console.error('Error fetching daily beatmap:', error);
@@ -78,4 +97,5 @@ function getDailyBeatmap() {
 document.addEventListener("DOMContentLoaded", function() {
     getDailyBeatmap();
     spawnHomePage();
+    console.log("Width: " + window.innerWidth + " Height: " + window.innerHeight);
 });
