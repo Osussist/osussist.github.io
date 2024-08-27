@@ -56,11 +56,17 @@ function getDailyBeatmap() {
             let highest_diff = Math.round(data.ratings[0]);
 
 
-            if (highest_diff > 8)
-                highest_diff = 8;
-
-            for (let i = 0; i < highest_diff; i++) {
-                song_star_holder.append("<i class='fas fa-star'></i>\n");
+            if (highest_diff > 8) {
+                highest_diff = 8
+                for (let i = 0; i < highest_diff; i++) {
+                    song_star_holder.append("<i class='fas fa-star'></i>\n");
+                }
+                song_star_holder.append('<i class="fa-solid fa-plus"></i>\n');
+            }
+            else {
+                for (let i = 0; i < highest_diff; i++) {
+                    song_star_holder.append("<i class='fas fa-star'></i>\n");
+                }
             }
         },
         error: function(xhr, status, error) {
