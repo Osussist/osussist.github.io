@@ -34,7 +34,7 @@ function spawnWikiPage() {
 
 function getDailyBeatmap() {
     $.ajax({
-        url: apiUrl + "/get-daily-beatmap",
+        url: apiUrl + "/get/daily-beatmap",
         method: "GET",
         dataType: "json",
         headers: {
@@ -97,5 +97,4 @@ function getDailyBeatmap() {
 document.addEventListener("DOMContentLoaded", function() {
     getDailyBeatmap();
     spawnHomePage();
-    console.log("Width: " + window.innerWidth + " Height: " + window.innerHeight);
 });
