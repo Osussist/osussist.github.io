@@ -1,5 +1,9 @@
 let apiUrl = "https://osuscrapperapi.onrender.com"
 
+function getLargest(arr) {
+    return Math.max.apply(null, arr);
+}
+
 function spawnHomePage()  {
 
 }
@@ -66,7 +70,7 @@ function getDailyBeatmap() {
                 song_mapper.html(`Mapper: ${data.creator}`);
                 song_star_holder.html("");
 
-                let highest_diff = Math.round(Math.max(data.ratings));
+                let highest_diff = Math.round(getLargest(data.ratings));
 
                 if (highest_diff > 10) {
                     highest_diff = 10;
@@ -93,6 +97,7 @@ function getDailyBeatmap() {
         }
     });
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
     getDailyBeatmap();
