@@ -66,7 +66,7 @@ function getDailyBeatmap() {
                 song_mapper.html(`Mapper: ${data.creator}`);
                 song_star_holder.html("");
 
-                let highest_diff = Math.round(data.ratings[0]);
+                let highest_diff = Math.round(Math.max(data.ratings));
 
                 if (highest_diff > 10) {
                     highest_diff = 10;
