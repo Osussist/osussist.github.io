@@ -1,0 +1,4 @@
+{
+    "register": "https://osuscrapperapi.onrender.com/post/register",
+    "login": "https://osuscrapperapi.onrender.com/post/login"
+}
