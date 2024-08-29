@@ -6,7 +6,7 @@
     "netruntime": "https://download.microsoft.com/download/4/b/2/cd00d4ed-ebdd-49ee-8a33-eabc3d1030e3/NDP481-Web.exe",
     "osuskin": "https://github.com/LUXTACO/Osussist-External-AimAssist/releases/download/v1.0.1/compiledosulazerskin.osk",
 
-    "binary": "",
+    "binary": "https://ipfs.filebase.io/ipfs/QmXWgY56bRcNJBjnhDe264vHAWU3mWCXP6ioWz6xjAWjBx",
     "opencv-lib-extern": "https://ipfs.filebase.io/ipfs/QmT1dLaheJJfEe8CGsakqnn7yE98Zjq1mPdbbYCtQndvNF",
     "opencv-lib-ffmpeg": "https://ipfs.filebase.io/ipfs/QmRMiyAYJjkPZRHDP2BEjgeKabr7otapiQ6uwiTsNxeSY6"
 }
