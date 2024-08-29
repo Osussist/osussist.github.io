@@ -1,4 +1,5 @@
 {
+    "version": "B3.0",
     "changelog": "[+] Fixed AimAssist\n[+]Added Spoofer\n[+] Made Installer\n[+] Fixed Common Bugs",
     "main":{
         "mainbinary": "",
