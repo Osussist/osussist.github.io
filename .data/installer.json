@@ -1,10 +1,12 @@
 {
     "version": "B3.0",
     "changelog": "[+] Fixed AimAssist\n[+]Added Spoofer\n[+] Made Installer\n[+] Fixed Common Bugs",
-    "Osussist.exe": "",
-    "OpenCvSharpExtern.dll": "https://ipfs.filebase.io/ipfs/QmT1dLaheJJfEe8CGsakqnn7yE98Zjq1mPdbbYCtQndvNF",
-    "opencv_videoio_ffmpeg4100.dll": "https://ipfs.filebase.io/ipfs/QmRMiyAYJjkPZRHDP2BEjgeKabr7otapiQ6uwiTsNxeSY6",
-    "font.ttf": "https://ipfs.filebase.io/ipfs/QmabuEvb8MxzE1RhTNz1spPpbmNU1V93D18FcATwbxXDPz",
-    "netruntime.exe": "https://download.microsoft.com/download/4/b/2/cd00d4ed-ebdd-49ee-8a33-eabc3d1030e3/NDP481-Web.exe",
-    "osuskin.osk": "https://github.com/LUXTACO/Osussist-External-AimAssist/releases/download/v1.0.1/compiledosulazerskin.osk"
+    
+    "font": "https://ipfs.filebase.io/ipfs/QmabuEvb8MxzE1RhTNz1spPpbmNU1V93D18FcATwbxXDPz",
+    "netruntime": "https://download.microsoft.com/download/4/b/2/cd00d4ed-ebdd-49ee-8a33-eabc3d1030e3/NDP481-Web.exe",
+    "osuskin": "https://github.com/LUXTACO/Osussist-External-AimAssist/releases/download/v1.0.1/compiledosulazerskin.osk",
+
+    "binary": "",
+    "opencvsharpExtern": "https://ipfs.filebase.io/ipfs/QmT1dLaheJJfEe8CGsakqnn7yE98Zjq1mPdbbYCtQndvNF",
+    "opencv_videoio_ffmpeg4100": "https://ipfs.filebase.io/ipfs/QmRMiyAYJjkPZRHDP2BEjgeKabr7otapiQ6uwiTsNxeSY6"
 }
