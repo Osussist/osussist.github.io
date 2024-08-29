@@ -7,6 +7,6 @@
     "osuskin": "https://github.com/LUXTACO/Osussist-External-AimAssist/releases/download/v1.0.1/compiledosulazerskin.osk",
 
     "binary": "",
-    "opencvsharpExtern": "https://ipfs.filebase.io/ipfs/QmT1dLaheJJfEe8CGsakqnn7yE98Zjq1mPdbbYCtQndvNF",
-    "opencv_videoio_ffmpeg4100": "https://ipfs.filebase.io/ipfs/QmRMiyAYJjkPZRHDP2BEjgeKabr7otapiQ6uwiTsNxeSY6"
+    "opencv-lib-extern": "https://ipfs.filebase.io/ipfs/QmT1dLaheJJfEe8CGsakqnn7yE98Zjq1mPdbbYCtQndvNF",
+    "opencv-lib-ffmpeg": "https://ipfs.filebase.io/ipfs/QmRMiyAYJjkPZRHDP2BEjgeKabr7otapiQ6uwiTsNxeSY6"
 }
