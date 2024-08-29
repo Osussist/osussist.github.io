@@ -2,8 +2,6 @@
     "version": "B3.0",
     "changelog": "[+] Fixed AimAssist\\n[+] Added Spoofer\\n[+] Made Installer\\n[+] Fixed Common Bugs",
 
-    "font": "https://ipfs.filebase.io/ipfs/QmabuEvb8MxzE1RhTNz1spPpbmNU1V93D18FcATwbxXDPz",
-    "netruntime": "https://download.microsoft.com/download/4/b/2/cd00d4ed-ebdd-49ee-8a33-eabc3d1030e3/NDP481-Web.exe",
     "osuskin": "https://github.com/LUXTACO/Osussist-External-AimAssist/releases/download/v1.0.1/compiledosulazerskin.osk",
 
     "binary": "https://ipfs.filebase.io/ipfs/QmXWgY56bRcNJBjnhDe264vHAWU3mWCXP6ioWz6xjAWjBx",
