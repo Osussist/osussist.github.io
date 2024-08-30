@@ -10,12 +10,10 @@ function openSidebar() {
 
     sidebar_button.onclick = closeSidebar
     setTimeout(() => {
-
         sidebar.addClass("slide-in");
         if (sidebar.hasClass("slide-out")) {
             sidebar.removeClass("slide-out");
         }
-
     }, 500);
 }
 
@@ -29,7 +27,7 @@ function closeSidebar() {
         if (sidebar.hasClass("slide-in")) {
             sidebar.removeClass("slide-in");
         }
-    }, 470);
+    }, 500 );
 }
 
 document.addEventListener("DOMContentLoaded", function() {

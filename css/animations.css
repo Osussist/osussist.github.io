@@ -9,14 +9,14 @@
 }
 
 .slide-in {
-    animation: slide-in 0.5s ease-in;
-    translate: translateX(0);
+    animation: slide-in 0.5s ease-out;
+    transform: translateX(0);
     visibility: visible;
 }
 
 .slide-out {
     animation: slide-out 0.5s ease-out;
-    translate: translateX(-100%);
+    transform: translateX(-100%);
 }
 
 
