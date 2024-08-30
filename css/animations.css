@@ -8,6 +8,17 @@
     opacity: 0;
 }
 
+.slide-in {
+    animation: slide-in 0.5s ease-in;
+    translate: translateX(0);
+    visibility: visible;
+}
+
+.slide-out {
+    animation: slide-out 0.5s ease-out;
+    translate: translateX(-100%);
+}
+
 
 @keyframes fade-in {
     from {
@@ -37,6 +48,24 @@
         stroke-width: 0;
         opacity: 0;
         r: 60;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
