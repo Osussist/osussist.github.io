@@ -29,7 +29,7 @@ function closeSidebar() {
         if (sidebar.hasClass("slide-in")) {
             sidebar.removeClass("slide-in");
         }
-    }, 400);
+    }, 470);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
