@@ -116,6 +116,9 @@ body::before {
 
 .sidebar-content-text::-webkit-scrollbar {
     width: 5px;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    visibility: hidden;
 }
 
 .sidebar-content-text h1 {

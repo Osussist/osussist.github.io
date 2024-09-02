@@ -27,10 +27,13 @@ function closeSidebar() {
         if (sidebar.hasClass("slide-in")) {
             sidebar.removeClass("slide-in");
         }
-    }, 500 );
+    }, 500);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     checkDesktop();
     getDailyBeatmap();
+    spawnHomePage();
 });
+
+window.onresize = checkDesktop
