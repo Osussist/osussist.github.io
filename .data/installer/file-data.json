@@ -1,21 +1,26 @@
 {
     "comfortaa": {
+        "download": "https://srrgpitmevgeilboajll.supabase.co/storage/v1/object/public/Osussist-FileSystem/dependencies/comfortaa?t=2024-09-11T14%3A38%3A03.893Z",
         "signature": "B9281BE276C9F683947BB52F44F30D27DCCC94E578ECEC5E33C0883F01C57063",
         "upload-date": "11-09-2024"
     },
     "osuskin": {
+        "download": "https://github.com/LUXTACO/Osussist-External-AimAssist/releases/download/v1.0.1/compiledosulazerskin.osk",
         "signature": "C4F26CADEB132494F33D9147467B36F884280194191B8A24DC6DB5831EFE5453",
         "upload-date": "03-03-2024"
     },
     "main-binary": {
+        "download": "",
         "signature": "",
         "upload-date": ""
     },
     "opencv-lib-extern": {
+        "download": "https://srrgpitmevgeilboajll.supabase.co/storage/v1/object/public/Osussist-FileSystem/dependencies/OpenCvSharpExtern?t=2024-09-11T14%3A09%3A13.869Z",
         "signature": "B3572ABD3947B008D78CF7D36BB43A5E99E9D84EF6C49F588BCBC83A1035ED99",
         "upload-date": "11-09-2024"
     },
     "opencv-lib-ffmpeg": {
+        "download": "https://srrgpitmevgeilboajll.supabase.co/storage/v1/object/public/Osussist-FileSystem/dependencies/opencv_videoio_ffmpeg4100?t=2024-09-11T14%3A09%3A29.578Z",
         "signature": "32EA2799B91D59CF5589DAF4588662CCD4880D9EA03F534F01ADED163EE474ED",
         "upload-date": "11-09-2024"
     }
