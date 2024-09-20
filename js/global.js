@@ -6,7 +6,7 @@ function getLargest(arr) {
 
 function getDailyBeatmap() {
     $.ajax({
-        url: apiUrl + "/get/daily-beatmap",
+        url: apiUrl + "/osu/daily-beatmap",
         method: "GET",
         dataType: "json",
         headers: {
