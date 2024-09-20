@@ -1,0 +1,5 @@
+{
+    "version": "B4.0",
+    "build-date": "15-09-2024",
+    "changelog": "[+] Fatal error logs \\n[+] Universal-Client aimbot \\n[+] Stable-Only Aimbot \\n[+] Linear-Based mouse movement \\n[+] Bezier-Based mouse movement \\n[+] Fixed Step-Based mouse movement \\n[+] Mouse movement algorithm selector \\n[+] Fixed Smoothing behavior \\n[+] Dynamic step calculation \\n[+] Intelligent mouse movement \\n \\n[-] Removed step threshold \\n[-]Removed bogus crashes"
+}
