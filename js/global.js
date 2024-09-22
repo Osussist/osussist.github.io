@@ -1,4 +1,4 @@
-let apiUrl = "https://osuscrapperapi.onrender.com"
+let apiUrl = "https://osussistapi.onrender.com"
 
 function getLargest(arr) {
     return Math.max.apply(null, arr);

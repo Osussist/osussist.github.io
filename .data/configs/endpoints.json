@@ -1,4 +1,0 @@
-{
-    "get": "https://osuscrapperapi.onrender.com/get/configs",
-    "post": "https://osuscrapperapi.onrender.com/post/configs"
-}
