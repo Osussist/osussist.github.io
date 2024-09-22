@@ -1,0 +1,34 @@
+Osussist Build Info
+
+Version: B4.0
+Status: UNDETECTED
+
+Changelog:
+
++ Aimbot rework
+  + Added better aimbot for stable client
+  + Added 4 different mouse movement algorithms
+  + Made existing computer vision aimbot better overall
+
++ Crash Handler
+  + New crash logging
+  + No more unrecognized crashes
+
++ Gui changes
+  + Added mouse algorithm selector
+  + Added HR mode for stable aimbot
+  + Added Audio Offset setting to aimbot
+  + Added an advanced config button on config tab
+
++ Advanced config
+  + Movement timing variance
+  + Custom hitobject radius for aimbot
+  + Min area of identifier in lazer aimbot
+  + Hitscan radius multiplier slider for relax
+  + Aimbot type override (only use when on stable client)
+
+- Removed aimbot settings
+  - No more step threshold as its not needed
+
+- Removed common crashes
+  - Most of the osu lazer IPC hooking crashes have been fixed
