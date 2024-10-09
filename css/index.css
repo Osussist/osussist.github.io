@@ -8,7 +8,8 @@
 
     --panel-color: rgb(53, 52, 53);
     --panel-header-color: rgb(40, 39, 41);
-    --panel-title-color: rgb(255, 68, 194);
+    --button-color: rgb(255, 29, 180);
+    --button-hover-color: rgb(235, 27, 166);
 
     --levitation-font: 'Levitation', sans-serif;
     --inconsola-font: 'Inconsolata', monospace;
@@ -257,36 +258,35 @@ body::before {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 5px;
     margin: 20px;
     background-color: var(--panel-header-color);
     box-sizing: border-box;
     border-radius: 10px;
-    padding: 20px;
 }
 
 .banner-content {
     width: auto;
     height: 100%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .banner-content h1 {
     margin: 0;
+    margin-left: 20px;
     font-weight: 200;
-    font-size: 200%;
-    color: var(--panel-title-color);
+    color: var(--main-color);
     font-family: var(--comfortaa-font);
 }
 
 .banner-content h2 {
     margin: 0;
+    margin-left: 20px;
     margin-bottom: 10px;
     font-weight: 200;
-    font-size: 150%;
     color: var(--secondary-color);
     font-family: var(--comfortaa-font);
 }
@@ -295,7 +295,6 @@ body::before {
     margin: 0;
     margin-top: 20px;
     font-weight: 200;
-    font-size: 130%;
     align-self: start;
     color: var(--secondary-color);
     font-family: var(--comfortaa-font);
@@ -306,7 +305,8 @@ body::before {
 }
 
 .banner-content ul {
-    margin: 5px;
+    margin: 0px;
+    padding-inline-start: 20px;
     list-style: none;
     margin-top: 10px;
     align-self: start;
@@ -316,7 +316,6 @@ body::before {
     margin: 0;
     margin-bottom: 10px;
     font-weight: 200;
-    font-size: 120%;
     align-self: start;
     color: var(--secondary-color);
     font-family: var(--comfortaa-font);
@@ -325,6 +324,28 @@ body::before {
 .banner-content li span {
     color: var(--main-color);
 }
+
+.banner-content button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+    border: 0;
+    width: calc(100% - 40px);
+    margin: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    font-family: var(--comfortaa-font);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.banner-content button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
 
 @media screen and (min-width: 1500px) {
     .sidebar {
@@ -353,6 +374,26 @@ body::before {
     
     .stars-holder i {
         font-size: 90%;
+    }
+
+    .banner-content h1 {
+        font-size: 200%;
+    }
+
+    .banner-content h2 {
+        font-size: 150%;
+    }
+
+    .banner-content h3 {
+        font-size: 130%;
+    }
+
+    .banner-content li {
+        font-size: 120%;
+    }
+
+    .banner-content button {
+        font-size: 130%;
     }
 }
 
@@ -383,5 +424,25 @@ body::before {
     
     .stars-holder i {
         font-size: 90%;
+    }
+
+    .banner-content h1 {
+        font-size: 170%;
+    }
+
+    .banner-content h2 {
+        font-size: 120%;
+    }
+
+    .banner-content h3 {
+        font-size: 100%;
+    }
+
+    .banner-content li {
+        font-size: 90%;
+    }
+
+    .banner-content button {
+        font-size: 100%;
     }
 }
