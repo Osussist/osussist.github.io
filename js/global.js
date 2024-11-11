@@ -100,42 +100,140 @@ function spawnHomePage() {
 
 function spawnCreditsPage()  {
     if (currentPage != Pages.CREDITS) {
-
+        currentPage = Pages.CREDITS;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/credits.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
 
 function spawnSupportPage()  {
     if (currentPage != Pages.SUPPORT) {
-
+        currentPage = Pages.SUPPORT;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/support.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
 
 function spawnFeaturesPage() {
     if (currentPage != Pages.FEATURES) {
-
+        currentPage = Pages.FEATURES;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/features.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
 
 function spawnDownloadPage() {
     if (currentPage != Pages.DOWNLOAD) {
-
+        currentPage = Pages.DOWNLOAD;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/download.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
 
 function spawnChangelogPage() {
     if (currentPage != Pages.CHANGELOG) {
-
+        currentPage = Pages.CHANGELOG;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/changelog.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
 
 function spawnConfigPage() {
     if (currentPage != Pages.CONFIG) {
-
+        currentPage = Pages.CONFIG;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/config.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
 
 function spawnWikiPage() {
     if (currentPage != Pages.WIKI) {
-
+        currentPage = Pages.WIKI;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/wiki.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
     }
 }
