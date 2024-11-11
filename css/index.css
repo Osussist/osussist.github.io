@@ -221,6 +221,10 @@ body::before {
     background-color: var(--sidebar-button-hover);
 }
 
+.sidebar-button-selected {
+    background-color: var(--sidebar-button-hover);
+}
+
 .main-content {
     width: calc(100% - 20%);
     height: 100%;

@@ -78,8 +78,17 @@ function getDailyBeatmap() {
     });
 }
 
+function resetButtonStates() {
+    let buttons = document.querySelectorAll('.sidebar-button');
+    buttons.forEach(button => {
+        button.classList.remove('sidebar-button-selected');
+    });
+}
+
 function spawnHomePage() {
     if (currentPage != Pages.HOME) {
+        resetButtonStates();
+        document.getElementById('home').classList.add('sidebar-button-selected');
         currentPage = Pages.HOME;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/home.html";
@@ -100,6 +109,8 @@ function spawnHomePage() {
 
 function spawnCreditsPage()  {
     if (currentPage != Pages.CREDITS) {
+        resetButtonStates();
+        document.getElementById('credits').classList.add('sidebar-button-selected');
         currentPage = Pages.CREDITS;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/credits.html";
@@ -120,6 +131,8 @@ function spawnCreditsPage()  {
 
 function spawnSupportPage()  {
     if (currentPage != Pages.SUPPORT) {
+        resetButtonStates();
+        document.getElementById('support').classList.add('sidebar-button-selected');
         currentPage = Pages.SUPPORT;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/support.html";
@@ -140,6 +153,8 @@ function spawnSupportPage()  {
 
 function spawnFeaturesPage() {
     if (currentPage != Pages.FEATURES) {
+        resetButtonStates();
+        document.getElementById('features').classList.add('sidebar-button-selected');
         currentPage = Pages.FEATURES;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/features.html";
@@ -160,6 +175,8 @@ function spawnFeaturesPage() {
 
 function spawnDownloadPage() {
     if (currentPage != Pages.DOWNLOAD) {
+        resetButtonStates();
+        document.getElementById('download').classList.add('sidebar-button-selected');
         currentPage = Pages.DOWNLOAD;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/download.html";
@@ -180,6 +197,8 @@ function spawnDownloadPage() {
 
 function spawnChangelogPage() {
     if (currentPage != Pages.CHANGELOG) {
+        resetButtonStates();
+        document.getElementById('changelog').classList.add('sidebar-button-selected');
         currentPage = Pages.CHANGELOG;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/changelog.html";
@@ -200,6 +219,8 @@ function spawnChangelogPage() {
 
 function spawnConfigPage() {
     if (currentPage != Pages.CONFIG) {
+        resetButtonStates();
+        document.getElementById('config').classList.add('sidebar-button-selected');
         currentPage = Pages.CONFIG;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/config.html";
@@ -220,6 +241,8 @@ function spawnConfigPage() {
 
 function spawnWikiPage() {
     if (currentPage != Pages.WIKI) {
+        resetButtonStates();
+        document.getElementById('wiki').classList.add('sidebar-button-selected');
         currentPage = Pages.WIKI;
         let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
         let url = url_prefix + "/wiki.html";
