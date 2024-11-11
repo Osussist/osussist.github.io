@@ -359,11 +359,21 @@ body::before {
     margin-right: 25px;
 }
 
-.banner-content-video iframe {
+.video-rounding {
     z-index: 1;
     width: 100%;
     height: 80%;
-    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    inset: 0;
+    box-sizing: border-box;
+    perspective: 1000px;
+}
+
+.video-rounding video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
