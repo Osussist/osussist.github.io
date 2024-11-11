@@ -1,4 +1,16 @@
+const Pages = {
+    HOME: 0,
+    CREDITS: 1,
+    SUPPORT: 2,
+    FEATURES: 3,
+    DOWNLOAD: 4,
+    CHANGELOG: 5,
+    CONFIG: 6,
+    WIKI: 7
+}
+
 let apiUrl = "https://osussistapi.onrender.com"
+let currentPage = null;
 
 function getLargest(arr) {
     return Math.max.apply(null, arr);
@@ -66,34 +78,64 @@ function getDailyBeatmap() {
     });
 }
 
-function spawnHomePage()  {
-
+function spawnHomePage() {
+    if (currentPage != Pages.HOME) {
+        currentPage = Pages.HOME;
+        let url_prefix = window.innerWidth <= 768 ? "/pages/mobile" : "/pages/desktop";
+        let url = url_prefix + "/home.html";
+        
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector('.main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home page:', error));
+    }
 }
 
 function spawnCreditsPage()  {
+    if (currentPage != Pages.CREDITS) {
 
+    }
 }
 
 function spawnSupportPage()  {
+    if (currentPage != Pages.SUPPORT) {
 
+    }
 }
 
 function spawnFeaturesPage() {
+    if (currentPage != Pages.FEATURES) {
 
+    }
 }
 
 function spawnDownloadPage() {
+    if (currentPage != Pages.DOWNLOAD) {
 
+    }
 }
 
 function spawnChangelogPage() {
+    if (currentPage != Pages.CHANGELOG) {
 
+    }
 }
 
 function spawnConfigPage() {
+    if (currentPage != Pages.CONFIG) {
 
+    }
 }
 
 function spawnWikiPage() {
+    if (currentPage != Pages.WIKI) {
 
+    }
 }

@@ -29,9 +29,8 @@ function addVideoHoverEffect() {
 
 document.addEventListener("DOMContentLoaded", function() {
     checkMobile();
-    getDailyBeatmap();
     spawnHomePage();
-    addVideoHoverEffect();
+    getDailyBeatmap();
 });
 
 window.onresize = checkMobile;

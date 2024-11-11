@@ -30,10 +30,11 @@ function closeSidebar() {
     }, 500);
 }
 
+
 document.addEventListener("DOMContentLoaded", function() {
     checkDesktop();
-    getDailyBeatmap();
     spawnHomePage();
+    getDailyBeatmap();
 });
 
 window.onresize = checkDesktop
