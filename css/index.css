@@ -395,6 +395,26 @@ body::before {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); 
 }
 
+.banner-features {
+    width: calc(100% - 40px);
+    height: 100%;
+    display: flex; 
+    justify-content: start;
+    align-items: start;
+    margin: 20px;
+    background-color: var(--panel-header-color);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.banner-features h1 {
+    margin: 0;
+    padding: 20px;
+    font-weight: 200;
+    color: var(--main-color);
+    font-family: var(--comfortaa-font);
+}
+
 @media screen and (min-width: 1500px) {
     .sidebar {
         width: 20%;
