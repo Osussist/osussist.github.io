@@ -391,24 +391,31 @@ body::before {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); 
 }
 
-.banner-features {
-    width: calc(100% - 40px);
-    height: 100%;
-    display: flex; 
+.banner-drawer {
+    width: 100%;
+    -webkit-mask-repeat-x: 40%;
+    display: flex;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     margin: 20px;
     background-color: var(--panel-header-color);
     box-sizing: border-box;
     border-radius: 10px;
 }
 
-.banner-features h1 {
-    margin: 0;
-    padding: 20px;
-    font-weight: 200;
-    color: var(--main-color);
-    font-family: var(--comfortaa-font);
+.banner-drawer img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-color);
+    margin: 10px;
 }
 
 @media screen and (min-width: 1500px) {
