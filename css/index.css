@@ -392,7 +392,7 @@ body::before {
 }
 
 .banner-drawer {
-    width: 100%;
+    width: calc(100% - 40px);
     -webkit-mask-repeat-x: 40%;
     display: flex;
     justify-content: start;
