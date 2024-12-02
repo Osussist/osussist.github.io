@@ -391,7 +391,7 @@ body::before {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); 
 }
 
-.banner-drawer {
+.banner-row {
     width: calc(100% - 40px);
     -webkit-mask-repeat-x: 40%;
     display: flex;
@@ -403,12 +403,50 @@ body::before {
     border-radius: 10px;
 }
 
-.banner-drawer img {
+.banner-row img {
     width: 50%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner-column {
+    width: 50%;
+    border-radius: inherit;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    margin: 20px;
+    background-color: var(--sidebar-color);
+}
+
+.banner-column-text {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.banner-column-text h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    color: var(--main-color);
+    font-family: var(--comfortaa-font);
+}
+
+.banner-column-text h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: var(--secondary-color);
+    font-family: var(--comfortaa-font);
 }
 
 divider {
