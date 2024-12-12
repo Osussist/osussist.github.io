@@ -174,7 +174,8 @@ function spawnFeaturesPage() {
 }
 
 function spawnDownloadPage() {
-    if (currentPage != Pages.DOWNLOAD) {
+    window.open('https://github.com/Osussist/OsussistExternal', '_blank')
+    /*if (currentPage != Pages.DOWNLOAD) {
         resetButtonStates();
         document.getElementById('download').classList.add('sidebar-button-selected');
         currentPage = Pages.DOWNLOAD;
@@ -192,7 +193,7 @@ function spawnDownloadPage() {
                 document.querySelector('.main-content').innerHTML = data;
             })
             .catch(error => console.error('Error loading home page:', error));
-    }
+    }*/
 }
 
 function spawnChangelogPage() {
